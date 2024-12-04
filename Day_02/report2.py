@@ -1,5 +1,3 @@
-import pandas as pd
-
 def check_safety(sublevels):
     diffs = [sublevels[i+1] - sublevels[i] for i in range(len(sublevels) - 1)]
     all_increasing = all(0 < diff <= 3 for diff in diffs)
